@@ -23,7 +23,7 @@ field.addEventListener('keypress', function(e) {
 
 function addTask() {
   if (field.value.trim() === '') {
-    return; // Empêcher l'ajout de tâches vides
+    return; 
   }
   
   const item = document.createElement('li');
@@ -44,23 +44,5 @@ function addTask() {
 
 
 
-
-/*btn.addEventListener ('click', ()=> {
-  
-    const item = document.createElement ('li');
-    item.innerText = field.value;
-    item.classList.add('taskAdded');
-    taskContainer.appendChild(item);
-    field.value ='';
-    
-    item.addEventListener ('click', ()=>{
-      item.classList.add('taskCompleted');
-    })
-    item.addEventListener ('dblclick', ()=>{
-       taskContainer.removeChild (item);
-  })   
-   
-
-})*/
 
 
